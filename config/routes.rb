@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :sites
     resources :users
     resources :usertypes
+    resources :services
   end
 
 end
