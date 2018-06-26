@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titlename: MyString
+  school: MyString
+  initialdate: 2018-06-26
+  finaldate: 2018-06-26
+  description: MyString
+  usertype: 1
+
+two:
+  titlename: MyString
+  school: MyString
+  initialdate: 2018-06-26
+  finaldate: 2018-06-26
+  description: MyString
+  usertype: 1
