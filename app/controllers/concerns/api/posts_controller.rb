@@ -33,5 +33,49 @@ class PostsController < ApplicationController
     @post.save
     render json:@post
   end
+
+
+  def schoolpostsall
+    @posts = Post.order('created_at DESC')
+    @schoolposts = []
+    @posts.each do |post|
+      @schoolposts << post if post.user.usertype.name != "Graduado"
+    end
+    render json:@off
+  end
+
+  def graduatespostsall
+    @posts = Post.order('created_at DESC')
+    @graduatesposts = []
+    @posts.each do |post|
+      @graduatesposts << post if post.user.usertype.name == "Graduado"
+    end
+    render json:@graduatesposts
+  end
+
+
+  def schoolposts
+    @posts = Post.order('created_at DESC')
+    @schoolposts = []
+    @posts.each do |post|
+      @schoolposts << post if post.user.usertype.name != "Graduado"
+    end
+    @offset = Integer(params[:offset])
+    @limit = Integer(params[:limit])
+    @limitedposts = @schoolposts.drop(@offset).first(@limit) #el segundo parámetro es el limit y el primero es el offset
+    render json:@limitedposts
+  end
+
+  def graduatesposts
+    @posts = Post.order('created_at DESC')
+    @graduatesposts = []
+    @posts.each do |post|
+      @graduatesposts << post if post.user.usertype.name == "Graduado"
+    end
+    @offset = Integer(params[:offset])
+    @limit = Integer(params[:limit])
+    @limitedposts = @graduatesposts.drop(@offset).first(@limit) #el segundo parámetro es el limit y el primero es el offset
+    render json:@limitedposts
+  end
 end
 end

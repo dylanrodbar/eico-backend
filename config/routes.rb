@@ -12,6 +12,14 @@ Rails.application.routes.draw do
     resources :ratings
     resources :ratingtypes
     resources :visits
+
+
+    get 'schoolpostsall', to: 'posts#schoolpostsall'
+    get 'graduatespostsall', to: 'posts#graduatespostsall'
+    get 'schoolposts', to: 'posts#schoolposts'
+    get 'graduatesposts', to: 'posts#graduatesposts'
+
+
   end
 
 end
