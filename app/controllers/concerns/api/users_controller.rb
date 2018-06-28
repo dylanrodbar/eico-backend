@@ -60,5 +60,7 @@ class UsersController < ApplicationController
     render json:@selectedusers
 
   end
+
+
 end
 end

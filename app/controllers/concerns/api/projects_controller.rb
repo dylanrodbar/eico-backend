@@ -33,5 +33,15 @@ class ProjectsController < ApplicationController
     @project.save
     render json:@project
   end
+
+  def getgraduatebyproject
+    @projects = Project.where("projectname ilike ?", "%" + params[:projectname] + "%")
+    @selectedusers = []
+    @projects.each do |project|
+      @selectedusers << project.user if project.user.usertype.name == "Graduado"
+    end
+    render json:@selectedusers
+
+  end
 end
 end
