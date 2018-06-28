@@ -2,6 +2,7 @@ module Api
 class PostsController < ApplicationController
   def index
     @posts = Post.order('created_at DESC')
+    puts(@posts)
     render json:@posts
   end
 
@@ -76,6 +77,11 @@ class PostsController < ApplicationController
     @limit = Integer(params[:limit])
     @limitedposts = @graduatesposts.drop(@offset).first(@limit) #el segundo parámetro es el limit y el primero es el offset
     render json:@limitedposts
+  end
+
+  def recentposts
+    @posts = Post.order('created_at DESC').limit(6)
+    render json:@posts
   end
 end
 end

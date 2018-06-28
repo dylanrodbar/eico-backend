@@ -18,6 +18,10 @@ Rails.application.routes.draw do
     get 'graduatespostsall', to: 'posts#graduatespostsall'
     get 'schoolposts', to: 'posts#schoolposts'
     get 'graduatesposts', to: 'posts#graduatesposts'
+    get 'recentposts', to: 'posts#recentposts'
+    get 'usertypebyname', to: 'usertypes#getbyname'
+    get 'ratingtypebyname', to: 'ratingtypes#getbyname'
+
 
 
   end

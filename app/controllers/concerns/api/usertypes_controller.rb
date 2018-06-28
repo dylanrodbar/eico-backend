@@ -29,5 +29,10 @@ class UsertypesController < ApplicationController
     @usertype.save
     render json:@usertype
   end
+
+  def getbyname
+    @usertype = Usertype.where(name: params[:name])
+    render json:@usertype
+  end
 end
 end

@@ -28,5 +28,10 @@ class RatingtypesController < ApplicationController
     @ratingtype.save
     render json:@ratingtype
   end
+
+  def getbyname
+    @ratingtype = Ratingtype.where(name: params[:name])
+    render json:@ratingtype
+  end
 end
 end
