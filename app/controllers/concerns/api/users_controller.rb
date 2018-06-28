@@ -38,5 +38,27 @@ class UsersController < ApplicationController
     @user.save
     render json:@user
   end
+
+
+  def getschoolbyname
+    @users = User.where("username ilike ?", "%" + params[:username] + "%")
+    @selectedusers = []
+    @users.each do |user|
+      @selectedusers << user if user.usertype.name != "Graduado"
+    end
+    render json:@selectedusers
+
+
+  end
+
+  def getgraduatebyname
+    @users = User.where("username ilike ?", "%" + params[:username] + "%")
+    @selectedusers = []
+    @users.each do |user|
+      @selectedusers << user if user.usertype.name == "Graduado"
+    end
+    render json:@selectedusers
+
+  end
 end
 end

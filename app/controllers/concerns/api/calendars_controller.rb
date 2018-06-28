@@ -31,7 +31,7 @@ class CalendarsController < ApplicationController
     render json:@calendar
   end
 
-  
+
   def getbymonthyeardistinct
     @calendar = Calendar.where('extract(month  from date) = ?', params[:month]).where('extract(year  from date) = ?', params[:year]).uniq.pluck(:date)
     render json:@calendar

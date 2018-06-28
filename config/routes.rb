@@ -24,7 +24,8 @@ Rails.application.routes.draw do
     get 'calendarbymonthyeardistinct', to: 'calendars#getbymonthyeardistinct'
     get 'calendarbymonthyear', to: 'calendars#getbymonthyear'
     get 'calendarbydaymonthyear', to: 'calendars#getbydaymonthyear'
-
+    get 'userschoolbyname', to: 'users#getschoolbyname'
+    get 'usersgraduatebyname', to: 'users#getgraduatebyname'
 
   end
 
