@@ -11,7 +11,7 @@ class RatingsController < ApplicationController
   end
 
   def create
-    @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id]})
+    @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
     @rating.save
     render json:@rating
   end
@@ -29,6 +29,22 @@ class RatingsController < ApplicationController
     @rating.user_id = params[:user_id]
     @rating.save
     render json:@rating
+  end
+
+
+  def getbydaymonthyear
+    @ratings = Rating.where('extract(month  from date) = ?', params[:month]).where('extract(year  from date) = ?', params[:year]).where('extract(day  from date) = ?', params[:day])
+    @relevants = 0
+    @indifferents = 0
+    @excitings = 0
+    @date = params[:day]+"-"+params[:month]+"-"+params[:year]
+    @ratings.each do |rating|
+      @relevants = @relevants + 1 if rating.ratingtype.name == "Relevante"
+      @indifferents = @indifferents + 1 if rating.ratingtype.name == "Indiferente"
+      @excitings = @excitings + 1 if rating.ratingtype.name == "Emocionante"
+    end
+
+    render json: {date: @date, relevants: @relevants, indifferents: @indifferents, excitings: @excitings}
   end
 end
 end
