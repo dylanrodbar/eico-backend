@@ -41,4 +41,10 @@ User.create({username: "dylanrodbar", password: "Dylan123456", email: "dylan123@
 =end
 
 #Post.create({title: "Primer publicación", description: "Primera descripción", video: "Primer video", date: "2018-02-02", media: "jasas", user_id: 1})
-Post.create({title: "Segunda publicación", description: "Segunda descripción", video: "Segundo video", date: "2018-02-03", media: "jasas", user_id: 1})
+#Post.create({title: "Segunda publicación", description: "Segunda descripción", video: "Segundo video", date: "2018-02-03", media: "jasas", user_id: 1})
+
+#Calendar.create({title: "calendario1", description: "descripcion1", date: "2018-02-02"})
+#Calendar.create({title: "calendario2", description: "descripcion2", date: "2018-03-02"})
+#Calendar.create({title: "calendario2", description: "descripcion2", date: "2018-03-02"})
+#Calendar.create({title: "calendario2", description: "descripcion2", date: "2018-03-03"})
+Calendar.create({title: "calendario3", description: "descripcion3", date: "2018-03-03"})

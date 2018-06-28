@@ -18,6 +18,8 @@ class PostSerializer < ActiveModel::Serializer
   end
 
 
+
+
   def relevants
     @counter = 0
     @ratings = object.ratings

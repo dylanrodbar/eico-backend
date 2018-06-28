@@ -42,7 +42,7 @@ class PostsController < ApplicationController
     @posts.each do |post|
       @schoolposts << post if post.user.usertype.name != "Graduado"
     end
-    render json:@off
+    render json:@schoolposts
   end
 
   def graduatespostsall
