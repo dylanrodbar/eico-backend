@@ -32,6 +32,7 @@ Rails.application.routes.draw do
     get 'adminemails', to: 'users#getadminemails'
     get 'useremails', to: 'users#getuseremails'
     get 'ratingsbydate', to: 'ratings#getbydaymonthyear'
+    get 'visitsbydate', to: 'visits#getbydaymonthyear'
 
 
   end

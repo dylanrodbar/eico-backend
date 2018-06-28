@@ -28,5 +28,13 @@ class VisitsController < ApplicationController
     @visit.save
     render json:@visit
   end
+
+  def getbydaymonthyear
+    @visits = Visit.where('extract(month  from date) = ?', params[:month]).where('extract(year  from date) = ?', params[:year]).where('extract(day  from date) = ?', params[:day])
+    @counter = @visits.count
+    @date = params[:day]+"-"+params[:month]+"-"+params[:year]
+
+    render json: {date: @date, visits: @counter}
+  end
 end
 end

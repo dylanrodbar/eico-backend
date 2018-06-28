@@ -51,7 +51,14 @@ User.create({username: "dylanrodbar", password: "Dylan123456", email: "dylan123@
 #Calendar.create({title: "calendario2", description: "descripcion2", date: "2018-03-03"})
 #Calendar.create({title: "calendario3", description: "descripcion3", date: "2018-03-03"})
 
-Project.create({projectname: "Proyecto1", workplace: "Lugar1", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 1", user_id: 1})
-Project.create({projectname: "Proyecto2", workplace: "Lugar3", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 2", user_id: 2})
-Project.create({projectname: "Proyecto3", workplace: "Lugar3", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 3", user_id: 1})
-Post.create({title: "Tercera publicación", description: "Tercera descripción", video: "Tercer video", date: "2018-02-03", media: "jasas", user_id: 2})
+#Project.create({projectname: "Proyecto1", workplace: "Lugar1", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 1", user_id: 1})
+#Project.create({projectname: "Proyecto2", workplace: "Lugar3", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 2", user_id: 2})
+#Project.create({projectname: "Proyecto3", workplace: "Lugar3", initialdate: "2018-02-05", finaldate: "2018-02-10", description: "Descripción 3", user_id: 1})
+#Post.create({title: "Tercera publicación", description: "Tercera descripción", video: "Tercer video", date: "2018-02-03", media: "jasas", user_id: 2})
+
+
+Visit.create({date: "2018-02-02"})
+Visit.create({date: "2018-02-02"})
+Visit.create({date: "2018-02-02"})
+Visit.create({date: "2018-02-03"})
+Visit.create({date: "2018-02-03"})
