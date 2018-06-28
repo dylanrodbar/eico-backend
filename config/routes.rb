@@ -29,6 +29,8 @@ Rails.application.routes.draw do
     get 'postsschoolbyname', to: 'posts#getschoolpostbyname'
     get 'postsgraduatebyname', to: 'posts#getgraduatepostbyname'
     get 'projectsbyname', to: 'projects#getgraduatebyproject'
+    get 'adminemails', to: 'users#getadminemails'
+    get 'useremails', to: 'users#getuseremails'
 
 
   end

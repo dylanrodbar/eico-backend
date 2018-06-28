@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6599ca-1764-4f55-841a-81371a4e6729" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/education_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/education_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/project_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/project_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/user_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/user_serializer.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -52,16 +47,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+            <state relative-caret-position="289">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="projects_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -91,8 +86,8 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="281">
+              <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -174,9 +169,9 @@
         <option value="$PROJECT_DIR$/app/serializers/project_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/education_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/user_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb" />
       </list>
     </option>
   </component>
@@ -397,12 +392,12 @@
       <workItem from="1529906379280" duration="20000" />
       <workItem from="1529987116311" duration="11294000" />
       <workItem from="1530085698829" duration="10332000" />
-      <workItem from="1530163425447" duration="14670000" />
+      <workItem from="1530163425447" duration="15487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41154000" />
+    <option name="totallyTimeSpent" value="41971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -752,24 +747,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="281">
+          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
         </state>
       </provider>
     </entry>

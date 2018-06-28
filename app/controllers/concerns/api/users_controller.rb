@@ -61,6 +61,26 @@ class UsersController < ApplicationController
 
   end
 
+  def getadminemails
+    @users = User.order('created_at DESC')
+    @selectedusers = []
+    @users.each do |user|
+      @selectedusers << user.email if user.usertype.name == "Administrador"
+    end
+
+    render json:@selectedusers
+  end
+
+  def getuseremails
+    @users = User.order('created_at DESC')
+    @selectedusers = []
+    @users.each do |user|
+      @selectedusers << user.email if user.usertype.name != "Administrador"
+    end
+
+    render json:@selectedusers
+  end
+
 
 end
 end
