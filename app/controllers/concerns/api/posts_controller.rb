@@ -83,5 +83,27 @@ class PostsController < ApplicationController
     @posts = Post.order('created_at DESC').limit(6)
     render json:@posts
   end
+
+
+  def getschoolpostbyname
+    @posts = Post.where("title ilike ?", "%" + params[:title] + "%")
+    @selectedposts = []
+    @posts.each do |post|
+      @selectedposts << post if post.user.usertype.name != "Graduado"
+    end
+    render json:@selectedposts
+
+
+  end
+
+  def getgraduatepostbyname
+    @posts = Post.where("title ilike ?", "%" + params[:title] + "%")
+    @selectedposts = []
+    @posts.each do |post|
+      @selectedposts << post if post.user.usertype.name == "Graduado"
+    end
+    render json:@selectedposts
+
+  end
 end
 end

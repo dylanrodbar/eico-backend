@@ -26,6 +26,9 @@ Rails.application.routes.draw do
     get 'calendarbydaymonthyear', to: 'calendars#getbydaymonthyear'
     get 'userschoolbyname', to: 'users#getschoolbyname'
     get 'usersgraduatebyname', to: 'users#getgraduatebyname'
+    get 'postsschoolbyname', to: 'posts#getschoolpostbyname'
+    get 'postsgraduatebyname', to: 'posts#getgraduatepostbyname'
+
 
   end
 
