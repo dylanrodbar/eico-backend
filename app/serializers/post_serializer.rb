@@ -9,7 +9,7 @@ class PostSerializer < ActiveModel::Serializer
 
   has_many :comments
   class CommentSerializer < ActiveModel::Serializer
-    attributes :id, :user, :description
+    attributes :id, :user, :description, :date
   end
 
   has_many :ratings
