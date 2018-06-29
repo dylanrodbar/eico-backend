@@ -82,8 +82,11 @@ class PostsController < ApplicationController
       @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@previous_offset+"&limit=4"
     end
 
+    #@limitedposts.insert(-1, @next)
+    #@limitedposts.insert(-1, @previous)
+
     #render json:@limitedposts
-    render json: {posts: @limitedposts, next: @next, previous: @previous}
+    render json:@limitedposts
   end
 
   def graduatesposts
