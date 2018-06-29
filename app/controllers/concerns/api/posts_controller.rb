@@ -95,7 +95,26 @@ class PostsController < ApplicationController
     @offset = Integer(params[:offset])
     @limit = Integer(params[:limit])
     @limitedposts = @graduatesposts.drop(@offset).first(@limit) #el segundo parámetro es el limit y el primero es el offset
-    render json:@limitedposts
+
+    @next = ""
+    @previous = ""
+    @str_offset = params[:offset].to_s
+    @next_offset = (params[:offset].to_i + 4).to_s
+    @previous_offset = (params[:offset].to_i - 4).to_s
+
+    if @limitedposts.count < 4
+      @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@str_offset+"&limit=4"
+    else
+      @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@next_offset+"&limit=4"
+    end
+    if @offset == 0
+      @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset=0&limit=4"
+    else
+      @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@previous_offset+"&limit=4"
+    end
+
+    #render json:@limitedposts
+    render json: {posts: @limitedposts, next: @next, previous: @previous}
   end
 
   def recentposts
