@@ -100,19 +100,26 @@ class PostsController < ApplicationController
     @next_offset = (params[:offset].to_i + 4).to_s
     @previous_offset = (params[:offset].to_i - 4).to_s
 
+    @next_offset_json = 0
+    @previous_offset_json = 0
+
     if @limitedposts.count < 4
       @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@str_offset+"&limit=4"
+      @next_offset_json = @str_offset
     else
       @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@next_offset+"&limit=4"
+      @next_offset_json = @next_offset
     end
     if @offset == 0
       @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset=0&limit=4"
+      @previous_offset_json = "0"
     else
       @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@previous_offset+"&limit=4"
+      @previous_offset_json = @previous_offset
     end
 
     #render json:@limitedposts
-    render json: {next: @next, previous: @previous}
+    render json: {next: @next, nextoffset: @next_offset_json,  previous: @previous, previousoffset: @previous_offset_json}
   end
 
   def nextschoolposts
@@ -131,19 +138,26 @@ class PostsController < ApplicationController
     @next_offset = (params[:offset].to_i + 4).to_s
     @previous_offset = (params[:offset].to_i - 4).to_s
 
+    @next_offset_json = 0
+    @previous_offset_json = 0
+
     if @limitedposts.count < 4
       @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@str_offset+"&limit=4"
+      @next_offset_json = @str_offset
     else
       @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@next_offset+"&limit=4"
+      @next_offset_json = @next_offset
     end
     if @offset == 0
       @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset=0&limit=4"
+      @previous_offset_json = "0"
     else
       @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@previous_offset+"&limit=4"
+      @previous_offset_json = @previous_offset
     end
 
     #render json:@limitedposts
-    render json: {next: @next, previous: @previous}
+    render json: {next: @next, nextoffset: @next_offset_json,  previous: @previous, previousoffset: @previous_offset_json}
   end
 
   def recentposts
