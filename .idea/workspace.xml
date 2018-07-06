@@ -94,8 +94,8 @@
       <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="159" column="122" selection-start-line="159" selection-start-column="122" selection-end-line="159" selection-end-column="122" />
+            <state relative-caret-position="297">
+              <caret line="116" column="62" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -399,12 +399,12 @@
       <workItem from="1530257905205" duration="8764000" />
       <workItem from="1530681709035" duration="6000" />
       <workItem from="1530790820015" duration="79000" />
-      <workItem from="1530862466485" duration="1970000" />
+      <workItem from="1530862466485" duration="2608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55497000" />
+    <option name="totallyTimeSpent" value="56135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -778,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="159" column="122" selection-start-line="159" selection-start-column="122" selection-end-line="159" selection-end-column="122" />
+        <state relative-caret-position="297">
+          <caret line="116" column="62" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
         </state>
       </provider>
     </entry>

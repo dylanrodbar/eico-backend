@@ -104,17 +104,17 @@ class PostsController < ApplicationController
     @previous_offset_json = 0
 
     if @limitedposts.count < 4
-      @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@str_offset+"&limit=4"
+      @next = "https://eicoapi.herokuapp.com/api/graduatesposts?offset="+@str_offset+"&limit=4"
       @next_offset_json = @str_offset
     else
-      @next = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@next_offset+"&limit=4"
+      @next = "https://eicoapi.herokuapp.com/api/graduatesposts?offset="+@next_offset+"&limit=4"
       @next_offset_json = @next_offset
     end
     if @offset == 0
-      @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset=0&limit=4"
+      @previous = "https://eicoapi.herokuapp.com/api/graduatesposts?offset=0&limit=4"
       @previous_offset_json = "0"
     else
-      @previous = "https://eicoapi.herokuapp.com/api/schoolposts?offset="+@previous_offset+"&limit=4"
+      @previous = "https://eicoapi.herokuapp.com/api/graduatesposts?offset="+@previous_offset+"&limit=4"
       @previous_offset_json = @previous_offset
     end
 
