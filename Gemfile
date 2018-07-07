@@ -45,6 +45,10 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
+group :production do
+  gem 'jwt'
+end
+
 # gem to generate fake data in order to test the api
 gem 'faker'
 # dsl: domain specific language, it lets define json structures on the views
