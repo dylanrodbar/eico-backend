@@ -36,6 +36,8 @@ Rails.application.routes.draw do
     get 'ratingsbydate', to: 'ratings#getbydaymonthyear'
     get 'visitsbydate', to: 'visits#getbydaymonthyear'
 
+    post 'authenticate', to: 'authentication#authenticate'
+
 
   end
 

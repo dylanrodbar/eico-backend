@@ -1,6 +1,9 @@
 module Api
 class UsersController < ApplicationController
 
+  skip_before_action :authenticate_request, :except => [:index, :show, :destroy, :update, :getschoolbyname, :getgraduatebyname, :getadminemails, :getuseremails]
+
+
   def index
     @users = User.order('created_at DESC')
     render json:@users
