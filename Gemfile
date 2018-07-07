@@ -46,7 +46,7 @@ group :development do
 end
 
 group :production do
-  
+
 end
 
 # gem to generate fake data in order to test the api
