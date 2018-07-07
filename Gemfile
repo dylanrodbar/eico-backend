@@ -46,9 +46,7 @@ group :development do
 end
 
 group :production do
-  gem 'jwt'
-  gem 'simple_command'
-
+  
 end
 
 # gem to generate fake data in order to test the api
