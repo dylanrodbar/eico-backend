@@ -15,17 +15,24 @@ class RatingsController < ApplicationController
     #@rating.save
     #render json:@rating
 
+    #se pregunta si hay un rating para el usuario y post
     @rating = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).first
+
+    #en caso de que sí, se debe evaluar si la calificación que se quiere dar ya existe
     if @rating.present?
+
       @rating_specific = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).where(:ratingtype_id=>params[:ratingtype_id]).first
+
+      #si la calificación específica ya existe, solo se quita el rating
       if @rating_specific.present?
         @rating.destroy
+      #en caso contrario, se quita el rating y se crea uno con la calificación nueva
       else
         @rating.destroy
         @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
         @rating.save
       end
-
+    #si la calificación no existía, solo se crea una nueva
     else
       @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
       @rating.save
