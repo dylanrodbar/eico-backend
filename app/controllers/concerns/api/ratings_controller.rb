@@ -17,9 +17,14 @@ class RatingsController < ApplicationController
 
     @rating = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).first
     if @rating.present?
-      @rating.destroy
-      @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
-      @rating.save
+      if @rating.ratingtype_id == params[:ratingtype_id]
+        @rating.destroy
+      else
+        @rating.destroy
+        @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
+        @rating.save
+      end
+
     else
       @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
       @rating.save
