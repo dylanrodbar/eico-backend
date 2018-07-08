@@ -1,5 +1,10 @@
 module Api
 class PostsController < ApplicationController
+
+  skip_before_action :authenticate_request, :except => [:create, :destroy, :update]
+
+
+
   def index
     @posts = Post.order('created_at DESC')
     puts(@posts)
