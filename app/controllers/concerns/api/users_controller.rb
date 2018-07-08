@@ -1,6 +1,8 @@
 module Api
 class UsersController < ApplicationController
 
+  skip_before_action :authenticate_request, :except => [:create, :destroy, :update]
+
 
   def index
     @users = User.order('created_at DESC')

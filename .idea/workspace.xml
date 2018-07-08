@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6599ca-1764-4f55-841a-81371a4e6729" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usertypes_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usertypes_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -177,9 +177,9 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/concerns/api/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/api/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -424,12 +424,12 @@
       <workItem from="1530790820015" duration="79000" />
       <workItem from="1530862466485" duration="3208000" />
       <workItem from="1530950932633" duration="6497000" />
-      <workItem from="1531022663470" duration="1394000" />
+      <workItem from="1531022663470" duration="2014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64626000" />
+    <option name="totallyTimeSpent" value="65246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -787,10 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="187">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -801,10 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/usertypes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
         </state>
       </provider>
     </entry>
