@@ -17,7 +17,8 @@ class RatingsController < ApplicationController
 
     @rating = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).first
     if @rating.present?
-      if @rating.ratingtype_id == params[:ratingtype_id]
+      @rating_specific = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).where(:ratingtype_id=>params[:ratingtype_id]).first
+      if @rating_specific.present?
         @rating.destroy
       else
         @rating.destroy
