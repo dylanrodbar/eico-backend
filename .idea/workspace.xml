@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6599ca-1764-4f55-841a-81371a4e6729" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/ratings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/ratings_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/services_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/services_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -91,8 +90,8 @@
       <file leaf-file-name="ratings_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/ratings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -421,12 +420,12 @@
       <workItem from="1530790820015" duration="79000" />
       <workItem from="1530862466485" duration="3208000" />
       <workItem from="1530950932633" duration="6497000" />
-      <workItem from="1531022663470" duration="5190000" />
+      <workItem from="1531022663470" duration="5354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68422000" />
+    <option name="totallyTimeSpent" value="68586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -796,8 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/ratings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>
     </entry>
