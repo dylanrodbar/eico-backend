@@ -11,9 +11,21 @@ class RatingsController < ApplicationController
   end
 
   def create
-    @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
-    @rating.save
+    #@rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
+    #@rating.save
+    #render json:@rating
+
+    @rating = Rating.where(:user_id=>params[:user_id]).where(:post_id=>params[:post_id]).first
+    if @rating.present?
+      @rating.destroy
+    else
+      @rating = Rating.new({post_id: params[:post_id], ratingtype_id: params[:ratingtype_id], user_id: params[:user_id], date: params[:date]})
+      @rating.save
+
+    end
     render json:@rating
+
+
   end
 
   def destroy

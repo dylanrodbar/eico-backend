@@ -18,6 +18,8 @@ class ServicesController < ApplicationController
     @service = Service.new({title: params[:title], description: params[:description]})
     @service.save
     render json:@service
+
+
   end
 
   def destroy
