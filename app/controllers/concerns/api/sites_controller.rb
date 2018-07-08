@@ -1,6 +1,9 @@
 module Api
 class SitesController < ApplicationController
 
+  skip_before_action :authenticate_request, :except => [:create, :destroy, :update]
+
+
   def index
     @sites = Site.order('created_at DESC')
     render json:@sites

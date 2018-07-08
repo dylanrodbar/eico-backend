@@ -1,5 +1,9 @@
 module Api
 class ServicesController < ApplicationController
+
+  skip_before_action :authenticate_request, :except => [:create, :destroy, :update]
+
+
   def index
     @services = Service.order('created_at DESC')
     render json:@services
